@@ -1,3 +1,4 @@
+# popover-for-33
 # 写出一个点开浮层、关闭浮层的例子，要求
 1. 点击按钮弹出浮层
 2. 点击别处关闭浮层
@@ -133,4 +134,4 @@ google搜ie stopPropagation checkbox bug，阻止默认事件[e.preventDefault()
 * [on()](https://www.jquery123.com/on/)里面可以直接写入false，调用[event.stopPropagation()](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/stopPropagation) 和 [event.preventDefault()](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/preventDefault)会从一个事件处理程序会自动返回false。也可以直接将 false 当作 handler 的参数，作为 function(){ return false; } 的简写形式。因此，**下面的写法 $("a.disabled").on("click", false);  将会阻止所有含有 "disabled" 样式的链接的默认行为，并阻止该事件上的冒泡行为。**
 
 ## JQ不支持true和false冒泡和捕获
-# popover-for-33
+
