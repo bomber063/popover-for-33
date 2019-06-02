@@ -70,6 +70,24 @@ $(clickMe).on('click',function(){
   })
 ```
 JSbin代码[链接](https://jsbin.com/pofosilisa/1/edit?html,js,output)
+它的效果其实类似于
+```
+$(clickMe).on('click', function () {
+  if (popover.style.display === 'block') {
+    $(popover).hide()
+  } else {
+    $(popover).show()
+    $(document).one('click', function () {
+      $(popover).hide()
+    })
+  }
+})
+$(wrapper).on('click', function (a) {
+  a.stopPropagation()
+})
+```
+
+
 
 * 如果在浮层上阻止冒泡那么，不可以重复点击按钮使得消失和出现重复出现，需要点击document之后才会重复消失和出现，因为document再次绑定为hide，那么下一次就是show。
 ```
