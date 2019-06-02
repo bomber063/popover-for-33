@@ -135,3 +135,5 @@ google搜ie stopPropagation checkbox bug，阻止默认事件[e.preventDefault()
 
 ## JQ不支持true和false冒泡和捕获
 
+## 这个代码在github上的预览加上html后缀就不能预览，不知道为什么。
+
