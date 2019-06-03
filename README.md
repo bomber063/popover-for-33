@@ -111,7 +111,7 @@ $(clickMe).on('click',function(){
 * JSbin代码[链接](https://jsbin.com/pisakebiku/1/edit?html,js,output)
 
 
-#用到的API
+# 用到的API
 ## JQ的.toggle()
 .toggle()用处有两种：
 1. [.toggle()](https://www.jquery123.com/toggle/)可以显示或隐藏匹配元素。**浮层这个任务主要用到这个**
