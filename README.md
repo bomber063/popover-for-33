@@ -154,4 +154,6 @@ google搜ie stopPropagation checkbox bug，阻止默认事件[e.preventDefault()
 ## JQ不支持true和false冒泡和捕获
 
 ## 这个代码在github上的预览加上html后缀就不能预览，不知道为什么。
+* 经过一天之后再次用html后缀就可以正常预览了，可能是需要后台处理吧，也可以说明加上后缀的后台处理是最慢的。
+* 如果html文件名字是index可以不加后缀，或者直接不写html文件。
 
