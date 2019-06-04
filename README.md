@@ -146,7 +146,8 @@ $(clickMe).on('click',function(){
 * [white-space](https://developer.mozilla.org/zh-CN/docs/Web/CSS/white-space) CSS 属性是用来设置如何处理元素中的空白。
 
 ## IE bug
-google搜ie stopPropagation checkbox bug，阻止默认事件[e.preventDefault()](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/preventDefault)
+* google搜ie stopPropagation checkbox bug，阻止默认事件[e.preventDefault()](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/preventDefault)
+* google之后找到的[链接地址](https://stackoverflow.com/questions/1164213/how-to-stop-event-bubbling-on-checkbox-click)
 
 ## on()里面的false
 * [on()](https://www.jquery123.com/on/)里面可以直接写入false，调用[event.stopPropagation()](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/stopPropagation) 和 [event.preventDefault()](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/preventDefault)会从一个事件处理程序会自动返回false。也可以直接将 false 当作 handler 的参数，作为 function(){ return false; } 的简写形式。因此，**下面的写法 $("a.disabled").on("click", false);  将会阻止所有含有 "disabled" 样式的链接的默认行为，并阻止该事件上的冒泡行为。**
